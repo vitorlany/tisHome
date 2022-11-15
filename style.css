@@ -16,7 +16,9 @@ h1, h2, h3, h4, h4, h6 {
     --brand-03: #7EE2A8;
     --brand-escuro: #18683A;
 
+    --texto-01: #1C221F;
     --texto-02: #323E38;
+    --texto-disable: #27302B;
 }
 
 .nav--bar {
@@ -25,6 +27,8 @@ h1, h2, h3, h4, h4, h6 {
     padding: 0 120px;
     min-height: 64px;
     background-color: var(--brand-fundo);
+    position: fixed;
+    width: 100%;
 }
 
 .nav--container {
@@ -112,4 +116,59 @@ h1, h2, h3, h4, h4, h6 {
 
 .apresentacao--pessoas {
     max-width: 388px;
+}
+
+.cads {
+    margin: 120px 0;
+}
+
+.cards--titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cards-principal-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.cards-principal-titulo h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--texto-01);
+}
+
+.cards-principal-titulo span {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--texto-disable);
+    opacity: 0.55;
+}
+
+.cards--grid {
+    padding: 0 12px;
+}
+
+.cards--prestador {
+    border-radius: 8px;
+    height: 258px;
+    background-color: #000;
+}
+
+@media (max-width: 630px) {
+    .apresentacao--img {
+        display: none;
+    }
+
+    .apresentacao {
+        padding: 84px 24px;
+    }
+
+    .cards-principal-titulo span {
+        display: none;
+    }
 }
