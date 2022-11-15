@@ -115,10 +115,10 @@ h1, h2, h3, h4, h4, h6 {
     text-align: center;background: linear-gradient(90deg, #2ECC71 0%, #25A25A 100%);
     padding: 12px 0;
     border-radius: 8px;
-    margin-bottom: 38px;
 }
 
 .apresentacao--pessoas {
+    margin-top: 32px;
     max-width: 388px;
 }
 
@@ -245,4 +245,26 @@ h1, h2, h3, h4, h4, h6 {
     font-size: 24px;
     line-height: 140%;
     color: var(--texto-02);
+}
+
+.achou {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url("imgs/Achou.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.achou--texto {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.achou--texto h2 {
+    color: #25A25A;
 }
