@@ -29,6 +29,10 @@ h1, h2, h3, h4, h4, h6 {
     background-color: var(--brand-fundo);
     position: fixed;
     width: 100%;
+    z-index: 999;
+
+    backdrop-filter: blur(6px);
+    opacity: 0.9;
 }
 
 .nav--container {
@@ -191,7 +195,7 @@ h1, h2, h3, h4, h4, h6 {
 .cards--fundo-img {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     bottom: 0;
     width: 100%;
     padding: 10px 0;
@@ -204,4 +208,41 @@ h1, h2, h3, h4, h4, h6 {
     font-size: 20px;
     line-height: 140%;
     margin: 0;
+}
+
+.objetivo {
+    padding: 64px 0;
+    background-color: var(--brand-fundo);
+}
+
+.objetivo--texto {
+
+}
+
+.objetivo--imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objetivo--texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.objetivo--conteudo h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: var(--texto-01);
+    margin-bottom: 24px;
+}
+
+.objetivo--conteudo p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--texto-02);
 }
